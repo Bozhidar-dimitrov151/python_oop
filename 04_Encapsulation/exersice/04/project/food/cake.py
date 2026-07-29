@@ -1,4 +1,4 @@
-from project.food.dessert import Dessert
+from project_1.food.dessert import Dessert
 
 class Cake(Dessert):
     GRAMS = 250

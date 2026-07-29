@@ -1,4 +1,4 @@
-from project.food.main_dish import MainDish
+from project_1.food.main_dish import MainDish
 
 class Salmon(MainDish):
     GRAMS = 22

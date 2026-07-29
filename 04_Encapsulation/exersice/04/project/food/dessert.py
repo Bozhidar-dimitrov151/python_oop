@@ -1,4 +1,4 @@
-from project.food.food import Food
+from project_1.food.food import Food
 class Dessert(Food):
 
     def __init__(self, name: str, price: float, grams: float, calories: float):
