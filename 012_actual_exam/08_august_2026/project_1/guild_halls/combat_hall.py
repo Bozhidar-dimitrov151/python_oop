@@ -1,0 +1,16 @@
+from project.guild_halls.base_guild_hall import BaseGuildHall
+
+class CombatHall(BaseGuildHall):
+    MAX_MEMBER_COUNT = 3
+
+    def __int__(self, alias:str):
+        super().__init__(alias)
+
+    def increase_gold(self, min_skill_level_value : int):
+        for member in self.members:
+            if member.role == "Warrior" and member.skill_level >= min_skill_level_value:
+                member.gold += 300
+
+    @property
+    def max_member_count(self):
+        return self.MAX_MEMBER_COUNT

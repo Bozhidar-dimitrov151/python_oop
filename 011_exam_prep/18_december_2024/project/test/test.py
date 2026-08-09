@@ -1,4 +1,4 @@
-from project.gallery import Gallery
+from project_1.gallery import Gallery
 
 import unittest
 
